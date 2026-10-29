@@ -1,0 +1,2 @@
+import {Routes,Route,Navigate} from 'react-router-dom';import Home from './pages/Home';import Personal from './pages/Personal';import Experience from './pages/Experience';import Education from './pages/Education';import Final from './pages/Final';
+export default function App(){return <Routes><Route path="/" element={<Home/>}/><Route path="/profile" element={<Personal/>}/><Route path="/experience" element={<Experience/>}/><Route path="/education" element={<Education/>}/><Route path="/final" element={<Final/>}/><Route path="*" element={<Navigate to="/"/>}/></Routes>}
